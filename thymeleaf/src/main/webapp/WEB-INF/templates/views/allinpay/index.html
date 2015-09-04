@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/channel">
+
+<body>
+
+<div layout:fragment="channel-ufx">
+    <div id="ufx-trade">
+        <div>
+            <a name="dialog" th:href="@{/index/allinpay/ufx/auth}">身份认证</a>
+        </div>
+    </div>
+
+    <div id="ufx-page">
+        <div>
+            <a href="#">身份认证前参数处理</a>
+            <a href="#">身份认证后参数处理</a>
+        </div>
+
+        <div>
+            <a href="#">签约前参数处理</a>
+            <a href="#">签约后参数处理</a>
+        </div>
+    </div>
+</div>
+<div layout:fragment="channel-inner">
+    <ul>
+        <li>
+            <a name="dialog" th:href="@{/index/allinpay/inner/test}">test</a>
+            <a name="dialog" th:href="@{/index/allinpay/ufx/auth}">身份认证</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/index">
+
+<body>
+<!-- ${view} :: content
+(${view} ?  ${view} + ':: content' : 'fragments/footer :: footer')
+
+((${view} == '') ?  ${view} + ':: content' : 'fragments/footer :: footer')
+
+(${view} ?  ${view} + ':: content' : 'fragments/footer
+
+fragments/footer :: footer
+
+'fragments/footer' :: 'footer'
+
+${view} ? (${view} :: content) : (fragments/footer :: footer) 
+
+-->
+<!--<div layout:fragment="body_right">
+    <th:block th:if="${#strings.isEmpty(view)}">
+        <span>view is empty</span>
+        <span>显示默认页面</span>
+    </th:block>
+    <th:block th:if="${not #strings.isEmpty(view)}" >
+        <th:block th:include="${view} :: content"/>
+    </th:block>
+</div>-->
+
+</body>
+</html>

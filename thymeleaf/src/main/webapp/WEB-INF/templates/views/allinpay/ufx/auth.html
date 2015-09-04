@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/page-ufx">
+
+<body>
+<div layout:fragment="content">
+    <div id="form_content">
+        <form th:action="@{/ufx/pay_identity_auth}" method="post" id="form-ufx-backend">
+
+            <div>
+                <label>流 水 号:</label>
+                <input class="easyui-validatebox" name="serial_no" id="serial_no" data-options="required:true"/>
+            </div>
+            <div>
+                <label>资金方式:</label>
+                <input class="easyui-validatebox" name="capital_mode" value="r" data-options="required:true"/>
+            </div>
+            <div>
+                <label>商 户 号:</label>
+                <input class="easyui-validatebox" name="merchant_name" value="test" data-options="required:true"/>
+            </div>
+
+            <div>
+                <label>订单日期:</label>
+                <input class="easyui-validatebox" name="order_date" id="order_date" data-options="required:true"/>
+            </div>
+            <div>
+                <label>订单时间:</label>
+                <input class="easyui-validatebox" name="order_time" id="order_time" data-options="required:true"/>
+            </div>
+            <div>
+                <label>证件类型:</label>
+                <input class="easyui-validatebox" name="id_kind_gb" value="0" data-options="required:true"/>
+            </div>
+            <div>
+                <label>证件号码:</label>
+                <input class="easyui-validatebox" name="id_no" value="341126197709218366" data-options="required:true"/>
+            </div>
+
+            <div>
+                <label>姓 名:</label>
+                <input class="easyui-validatebox" name="real_name" value="测试用户" data-options="required:true"/>
+            </div>
+            <div>
+                <label>手机号码:</label>
+                <input class="easyui-validatebox" name="mobile_tel" value="13552535506" data-options="required:true"/>
+            </div>
+            <div>
+                <label>电子邮箱:</label>
+                <input class="easyui-validatebox" name="email" value="7463526178@qq.com" data-options="required:true"/>
+            </div>
+            <div>
+                <label>账号类型:</label>
+                <input class="easyui-validatebox" name="bank_account_type" value="1" data-options="required:true"/>
+            </div>
+
+            <div>
+                <label>银行账号:</label>
+                <input class="easyui-validatebox" name="bank_account" value="6225230684107853"
+                       data-options="required:true"/>
+            </div>
+            <div>
+                <label>银行编号:</label>
+                <input class="easyui-validatebox" name="bank_no" value="002" data-options="required:true"/>
+            </div>
+
+            <div>
+                <input type="submit" id="btn_backend" class="easyui-linkbutton" value="提交"/>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

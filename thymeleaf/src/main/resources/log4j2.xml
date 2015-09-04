@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="10">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="../logs/czb.log"
+                     filePattern="logs/$${date:yyyy-MM}/czb-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>[%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingFile>
+        <Async name="Async">
+            <AppenderRef ref="RollingFile"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.github.isrsal.logging" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="Async"/>
+        </Logger>
+        <Root level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="left">
+    <div id="content-left">
+        <ul class="easyui-tree" data-options="animate:true,dnd:true">
+            <li>
+                <span>All Channels</span>
+                <ul>
+                    <li><a th:href="@{/index/allinpay}">通联快捷</a></li>
+                    <li>收 付 捷</li>
+                    <li>支 付 宝</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+
+</body>
+
+</html>

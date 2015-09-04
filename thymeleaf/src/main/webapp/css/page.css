@@ -1,0 +1,20 @@
+
+#form_content form div label {
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+    width: 75px;
+    text-align:justify;
+}
+
+#form_content form div {
+    float: left;
+    height: 20px;
+    margin-top: 15px;
+    padding-left: 20px;
+    width: 40%;
+} 
+
+#form_content form input[type=submit]{
+    width: 30%;
+} 

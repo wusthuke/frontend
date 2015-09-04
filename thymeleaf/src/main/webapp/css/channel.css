@@ -1,0 +1,26 @@
+
+@charset "utf-8";
+
+#channel-content #channel-ufx ul li {
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+#ufx-trade {
+    font-size: 14px;
+    width: 90%;
+    background-color: #698cba;
+}
+
+#ufx-trade, #ufx-page div {
+    line-height: 24px;
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+}
+
+#ufx-trade, #ufx-page div a {
+    display: inline-block;
+    background: #B3DFDA;
+    width: 40%;
+}

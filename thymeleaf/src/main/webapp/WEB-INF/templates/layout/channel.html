@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" th:href="@{/easyui/themes/default/easyui.css}"/>
+    <link rel="stylesheet" th:href="@{/easyui/themes/icon.css}"/>
+    <link rel="stylesheet" th:href="@{/css/channel.css}"/>
+    <style type="text/css">
+        /*html {
+            overflow: hidden;
+        }*/
+    </style>
+    <script type="text/javascript" th:src="@{/easyui/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/easyui/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/channel.js}"></script>
+</head>
+
+<body>
+<div id="channel-content" class="easyui-layout" data-options="fit:true">
+
+    <div data-options="region:'west',title:'UFX调用',split:true" style="width:50%;">
+        <div id="channel-ufx" layout:fragment="channel-ufx">
+            
+        </div>
+    </div>
+    <div data-options="region:'center',title:'内部调用',split:true">
+        <div id="channel-inner" layout:fragment="channel-inner">
+            
+        </div>
+    </div>
+</div>
+
+<div id="w" layout:fragment="sub-window" class="easyui-window" title="Basic Window" data-options="closed:true"
+     th:height="0" th:width="0">
+    The window content.
+</div>
+
+</body>
+</html>

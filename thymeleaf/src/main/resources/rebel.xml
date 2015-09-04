@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="D:/快盘/个人资料/个人项目/前端技术/frontend/thymeleaf/target/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir name="D:/快盘/个人资料/个人项目/前端技术/frontend/thymeleaf/src/main/webapp">
+			</dir>
+		</link>
+	</web>
+
+</application>
