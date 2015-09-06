@@ -31,9 +31,13 @@
 
     <distributionManagement>
         <repository>
-            <id>nexus-repo</id>
-            <url>file://${basedir}/target/deploy</url>
+            <id>file-repo-release</id>
+            <url>file://${basedir}/target/deploy/release</url>
         </repository>
+        <snapshotRepository>
+            <id>file-repo-snapshot</id>
+            <url>file://${basedir}/target/deploy/snapshot</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <build>
