@@ -95,16 +95,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <tagBase>file://${basedir}/target/tags/</tagBase>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <scmCommentPrefix />
-                    <arguments>-DskipTests</arguments>
-                    <releaseProfiles>release</releaseProfiles>
-                    <username>wusthuke</username>
-                    <password>hl712817</password>
-                    <!--<useReleaseProfile>false</useReleaseProfile>-->
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
