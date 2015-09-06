@@ -89,6 +89,9 @@
                     <releaseProfiles>release</releaseProfiles>
                     <username>wusthuke</username>
                     <password>hl712817</password>
+                    <updateBranchVersions>true</updateBranchVersions>
+                    <developmentVersion>1.0.2.SNAPSHOT</developmentVersion>
+                    <releaseVersion>1.0.1</releaseVersion>
                 </configuration>
             </plugin>
 
