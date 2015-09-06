@@ -77,31 +77,7 @@
                         </webApp>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.2</version>
-                    <configuration>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <!--<arguments>-DskipTests</arguments>-->
-                        <releaseProfiles>release</releaseProfiles>
-                        <username>wusthuke</username>
-                        <password>hl712817</password>
-                    </configuration>
-                   <!--  加入以下依赖后， release-prepare 后，代码会自动提交-->
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.apache.maven.scm</groupId>
-                            <artifactId>maven-scm-provider-gitexe</artifactId>
-                            <version>1.9.4</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.apache.maven.scm</groupId>
-                            <artifactId>maven-scm-api</artifactId>
-                            <version>1.9.1</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
@@ -114,8 +90,29 @@
         </pluginManagement>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
                 <artifactId>maven-release-plugin</artifactId>
+                <!--<version>2.5.2</version>-->
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <!--<arguments>-DskipTests</arguments>-->
+                    <releaseProfiles>release</releaseProfiles>
+                    <username>wusthuke</username>
+                    <password>hl712817</password>
+                </configuration>
+                <!--  加入以下依赖后， release-prepare 后，代码会自动提交-->
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <version>1.9.4</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-api</artifactId>
+                        <version>1.9.1</version>
+                    </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
