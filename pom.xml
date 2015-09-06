@@ -63,10 +63,13 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.4.2</version>
                     <configuration>
+                        <tagBase>file://${basedir}/target/tags/</tagBase>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix />
                         <arguments>-DskipTests</arguments>
                         <releaseProfiles>release</releaseProfiles>
+                        <username>wusthuke</username>
+                        <password>hl712817</password>
                         <!--<useReleaseProfile>false</useReleaseProfile>-->
                     </configuration>
                    <!--  加入以下依赖后， release-prepare 后，代码会自动提交-->
