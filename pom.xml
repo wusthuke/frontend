@@ -64,14 +64,14 @@
                         <arguments>-DskipTests</arguments>
                         <useReleaseProfile>false</useReleaseProfile>
                     </configuration>
-                    <!-- 加入以下依赖后， release-prepare 后，代码会自动提交 -->
-                    <!--<dependencies>
+                   <!--  加入以下依赖后， release-prepare 后，代码会自动提交-->
+                    <dependencies>
                         <dependency>
                             <groupId>org.apache.maven.scm</groupId>
                             <artifactId>maven-scm-provider-gitexe</artifactId>
-                            <version>1.9</version>
+                            <version>1.9.4</version>
                         </dependency>
-                    </dependencies>-->
+                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
