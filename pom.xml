@@ -66,7 +66,8 @@
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix />
                         <arguments>-DskipTests</arguments>
-                        <useReleaseProfile>false</useReleaseProfile>
+                        <releaseProfiles>release</releaseProfiles>
+                        <!--<useReleaseProfile>false</useReleaseProfile>-->
                     </configuration>
                    <!--  加入以下依赖后， release-prepare 后，代码会自动提交-->
                     <dependencies>
@@ -82,7 +83,7 @@
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.2</version>
                     <configuration>
-                        <uniqueVersion>false</uniqueVersion>
+                        <uniqueVersion>true</uniqueVersion>
                     </configuration>
                 </plugin>
             </plugins>
