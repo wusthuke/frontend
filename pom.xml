@@ -29,7 +29,15 @@
         <connection>scm:git:https://github.com/wusthuke/frontend.git</connection>
         <developerConnection>scm:git:https://git@github.com/wusthuke/frontend.git</developerConnection>
     </scm>
-    
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-repo</id>
+            <name>nexus repository</name>
+            <url>file://${basedir}/target/deploy</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <pluginManagement>
             <plugins>
