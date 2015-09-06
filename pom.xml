@@ -26,7 +26,6 @@
         <url>https://github.com/wusthuke/frontend</url>
         <connection>scm:git:https://github.com/wusthuke/frontend.git</connection>
         <developerConnection>scm:git:https://git@github.com/wusthuke/frontend.git</developerConnection>
-      <tag>y</tag>
   </scm>
 
     <distributionManagement>
