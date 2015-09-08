@@ -86,8 +86,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.4.2</version>
                 <configuration>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <useReleaseProfile>false</useReleaseProfile>
+                    <autoVersionSubmodules>false</autoVersionSubmodules>
                     <arguments>-DskipTests</arguments>
                     <username>wusthuke</username>
                     <password>hl712817</password>
