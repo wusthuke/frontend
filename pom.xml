@@ -87,7 +87,6 @@
                 <version>2.5.2</version>
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <releaseProfiles>release</releaseProfiles>
                     <username>wusthuke</username>
                     <password>hl712817</password>
                 </configuration>
