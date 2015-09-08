@@ -8,6 +8,7 @@
 
     <modules>
         <module>thymeleaf</module>
+        <module>testjar</module>
     </modules>
 
     <packaging>pom</packaging>
