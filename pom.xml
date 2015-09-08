@@ -4,7 +4,7 @@
 
     <groupId>org.huke.apps</groupId>
     <artifactId>frontend</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4-SNAPSHOT</version>
 
     <modules>
         <module>thymeleaf</module>
@@ -26,7 +26,7 @@
         <url>https://github.com/wusthuke/frontend</url>
         <connection>scm:git:https://wusthuke@github.com/wusthuke/frontend.git</connection>
         <developerConnection>scm:git:https://wusthuke@github.com/wusthuke/frontend.git</developerConnection>
-      <tag>frontend-1.0.3</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <distributionManagement>
