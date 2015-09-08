@@ -50,7 +50,6 @@
                     <configuration>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <arguments>-DskipTests</arguments>
-                        <password>hl712817</password>
                     </configuration>
                     <dependencies>
                         <dependency>
@@ -130,17 +129,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <!--<dependencies>
-        <dependency>
-            <groupId>org.apache.maven.scm</groupId>
-            <artifactId>maven-scm-provider-gitexe</artifactId>
-            <version>1.9.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.maven.scm</groupId>
-            <artifactId>maven-scm-api</artifactId>
-            <version>1.9.4</version>
-        </dependency>
-    </dependencies>-->
 </project>
