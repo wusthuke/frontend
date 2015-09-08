@@ -87,6 +87,9 @@
                 <version>2.5.2</version>
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <scmCommentPrefix></scmCommentPrefix>
+                    <arguments>-DskipTests</arguments>
                     <username>wusthuke</username>
                     <password>hl712817</password>
                 </configuration>
