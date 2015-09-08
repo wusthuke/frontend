@@ -4,7 +4,7 @@
 
     <groupId>org.huke.apps</groupId>
     <artifactId>frontend</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
 
     <modules>
         <module>thymeleaf</module>
